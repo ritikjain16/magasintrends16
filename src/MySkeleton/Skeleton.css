@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.skeleton::-webkit-scrollbar {
+  display: none;
+}
+
+.skeleton {
+  /* height: 104px; */
+  margin: 0;
+  display: flex;
+  padding: 2px;
+  justify-content: flex-start;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  overflow-x: auto;
+  margin-bottom: 5px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.card {
+  margin: 8px;
+  overflow: hidden;
+  /* background: transparent; */
+  /* border: none; */
+  /* outline: none; */
+}
+
+.card-content {
+  /* height: 150px;
+  width: 100px; */
+  /* font-size: 12px; */
+  /* text-align: center; */
+  /* background-color: red; */
+  border-radius: 2px;
+  position: relative;
+  border: none;
+  outline: 0;
+  /* box-shadow: 1px 1px 10px gray, -1px -1px 10px gray; */
+  /* animation: myanim 0.6s linear 1s 1; */
+}
+
+@keyframes myanim {
+  0% {
+    margin-top: 100px;
+  }
+
+  100% {
+    margin-top: 8px;
+  }
+}
+
+.div1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100px;
+  height: 200px;
+  box-shadow: 5px 0px 50px rgb(128, 128, 128, 0.3);
+  animation: skeleton 0.8s linear infinite;
+  transform: rotate(45deg);
+}
+.div2 {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  width: 120px;
+  height: 250px;
+  box-shadow: 5px 0px 50px rgb(128, 128, 128, 0.3);
+  animation: skeleton2 0.8s linear infinite;
+  transform: rotate(45deg);
+}
+
+@keyframes skeleton {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+
+  50% {
+    top: 0%;
+    left: 50%;
+  }
+
+  100% {
+    top: 0%;
+    left: 100%;
+  }
+}
+@keyframes skeleton2 {
+  0% {
+    top: 0%;
+    left: 100%;
+  }
+
+  50% {
+    top: 0%;
+    left: 50%;
+  }
+
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+/*  */
+
+.skeleton1 {
+  margin: 0;
+  display: flex;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
